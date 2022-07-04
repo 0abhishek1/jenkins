@@ -1,0 +1,11 @@
+$ git branch --contains <commit-id> | grep 'feature'
+
+# output
+feature
+feature1
+feature2
+
+$ git branch --contains <commit-id> | grep -E '(^|\s)feature$'
+
+# output
+feature     
